@@ -1,0 +1,81 @@
+<!-- Bryce Lipscomb, 12/12/2020 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="apple, orange, banana" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FruitCo</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>🚜FruitCo&#127821</h1>
+        <nav>
+            <a href="index.html">&#127817 Home &#127817</a>
+            <a href="about.html">&#127822 About &#127822</a>
+            <a href="contact.html">&#127827 Contact &#127827</a>
+        </nav>
+    </header>
+    <section>
+        <p>
+            All of our fruit is <strong>fresh and delicious!</strong> See the <a href="about.html">About</a> to learn more about the process that keeps our fruit so fresh. If your questions still aren't answered, head over to our <a href="contact.html">Contact</a> page to get in touch and we'd be happy to answer any inquiries.
+        </p>
+    </section>
+    <section id="contact-form">
+        <form onsubmit="handleSubmit(event)" >
+            <label><div>Name:</div>
+                <input
+                id="inputname"
+                type="text"
+                placeholder="Enter Your Name"
+                size="64" 
+                maxlength="24"
+                required
+                />
+            </label>
+            <label><div>Email:</div>
+                <input
+                id="inputemail"
+                type="text"
+                placeholder="Enter Your Email Address"
+                size="64" 
+                maxlength="32"
+                required/>
+            </label>
+            <label><div>Title:</div>
+                <input
+                id="inputtitle"
+                type="text"
+                placeholder="Enter A Title"
+                size="64" 
+                maxlength="32"
+                required/>
+            </label>
+            <label><div>Message:</div> 
+                <textarea
+                id="inputmessage"
+                type="text"
+                placeholder="Your Message Goes Here, max 1200 chars"
+                cols="64" 
+                rows="20"
+                maxlength="1200"
+                required></textarea>
+            </label>
+            <br/>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <nav>
+            <a href="index.html">&#127817 Home &#127817</a>
+            <a href="about.html">&#127822 About &#127822</a>
+            <a href="contact.html">&#127827 Contact &#127827</a>
+        </nav>
+        <p>FruitCo, Copyright 2019 &#169;</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

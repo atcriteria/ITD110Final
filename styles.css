@@ -1,0 +1,116 @@
+/* Bryce Lipscomb, 12/12/2020 */
+@charset "UTF-8";
+
+/* used star selector to apply Open Sans font to everything */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  margin: auto;
+  width: 40%;
+  background-color: hsl(137, 100%, 91%);
+}
+h1 {
+  font-size: 3.8rem;
+  letter-spacing: 0.5rem;
+}
+section {
+  background-color: hsl(177, 71%, 74%);
+}
+section p {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2.5%;
+}
+nav a {
+  text-align: center;
+  text-decoration: none;
+  width: 30%;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition-duration: 1s;
+}
+nav a:hover {
+  font-size: 1.4rem;
+  transition-duration: 0.5s;
+}
+footer {
+  margin: 2.5rem;
+  padding: 2.5rem;
+}
+footer > p {
+  text-align: center;
+  color: #f39c12;
+  font-size: 0.8rem;
+}
+.about p {
+  text-indent: 50px;
+}
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  padding: 2% 0;
+  height: 150px;
+}
+.big_emoji {
+  text-align: center;
+  width: 20%;
+  font-size: 5rem;
+  transition-duration: 1s;
+}
+.big_emoji:hover {
+  font-size: 6rem;
+  transition-duration: 0.5s;
+}
+.big_emoji a {
+  text-decoration: none;
+}
+.text_field {
+  width: 60%;
+  text-indent: 50px;
+  text-align: justify;
+}
+.container:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+form label {
+  margin: 2.5% 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+form label div {
+  width: 20%;
+}
+form button {
+  margin-bottom: 2.5%;
+}
